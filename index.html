@@ -8,17 +8,16 @@
         <meta name="robots" content="ALL" />
         <meta name="Author" content="Alana Vasconcelos" />
         <meta name="language" content="pt-br" />        
-        <link href="#" type="text/css" rel="stylesheet" />
-        <style>
+        <link href="style.css" type="text/css" rel="stylesheet" /><!--Essa forma que colocamos é para o CSS externo, sendo assim, não tem necessidade de permanecer com a tag "style" dentro do head. Podemos tirá-la (vou deixar comentada só para nível de aprendizado mesmo). Também é a forma mais comum de apresentar o CSS.-->
+        <!--<style>
             p{
                 text-align: center;
-            }
-            
-        </style><!--Dessa forma eu estou dizendo que aonde tiver a tag "p" no meu texto eu irei deixá-lo todo centralizado.-->
+            }            
+        </style>Dessa forma eu estou dizendo que onde estiver a tag "p" no meu texto eu irei deixá-lo todo centralizado. Não havendo necessidade de escrever em toda linha onde tiver a tag "p".-->
 
     </head>
     <body>
-        <h1 style="text-align: center;">Sobre o Mundo Pet</h1><!--O CSS desse jeito(com a tag "style") é chamado de inline. Repare que se eu quiser que os outros parágrafos tenham a alteração eu terei que repetir isso em cada um deles (não é viável para quando se tem muito texto, vamos ver a outra forma de usar no "head".)-->
+        <h1 style="text-align: center; background: #cccccc">Sobre o Mundo Pet</h1><!--O CSS desse jeito(com a tag "style") é chamado de inline. Repare que se eu quiser que os outros parágrafos tenham a alteração eu terei que repetir isso em cada um deles (não é viável para quando se tem muito texto, vamos ver a outra forma de usar no "head".)-->
         <p>Localizado no coração da cidade o <strong>Mundo Pet</strong> traz para o mercado o que há de melhor para o seu animal de estimação. Fundado em 2015, o Mundo Pet já é destaque na cidade e conquista novos clientes a cada dia.</p>
         <p style="font-size: 25px">Nossa missão é: <em><strong>"Proporcionar aos nossos clientes o melhor em serviços e produtos transmitindo qualidade e confiança através do amor que temos pelos animais".</strong></em></p>
         <p>Oferecemos profissionais experientes e especializados no cuidado do seu pet. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
