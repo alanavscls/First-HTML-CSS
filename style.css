@@ -11,6 +11,10 @@ p{
     /*Aqui se eu colocasse o background: #cccccc só teríamos na parte escrita do texto. Mas não queremos isso, a intenção era deixar toda a página cinza. Sendo assim, o mais apropriado seria colocar a tag no body.*/
 }
 
+#missao{/*Quando eu tenho um id na tag do HTML eu referencio ele no CSS com a #*/
+    font-size: 25px
+}
+
 em strong{
     color: red
 }/*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
