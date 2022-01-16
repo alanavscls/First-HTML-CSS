@@ -1,5 +1,5 @@
 body{
-    background: #cccccc;
+    background: #ffffff;
 }
 
 #banner{
@@ -21,7 +21,7 @@ p{
 }
 
 em strong{
-    color: red
+    color: #F9A31C 
 }/*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
 
 .itens{
