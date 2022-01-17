@@ -1,10 +1,13 @@
 body{
-    background: #ffffff;
+    background: #F0FFF0;
 }
 
 #banner{
-    width: 100%;
-    
+    width: 100%;    
+}
+
+.principal{
+    background: #87CEFA
 }
 
 h1{
@@ -21,10 +24,19 @@ p{
 }
 
 em strong{
-    color: #F9A31C 
+    color: #B2896D 
 }/*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
 
 .itens{
     font-style: italic;
+}
+
+.beneficios{
+    background: #F0FFF0;
+}
+
+h2{
+    text-align: center;
+
 }
 
