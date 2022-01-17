@@ -1,5 +1,5 @@
 body{
-    background: #F0FFF0;
+    
 }
 
 #banner{
@@ -7,7 +7,8 @@ body{
 }
 
 .principal{
-    background: #87CEFA
+    background: #F6E3C3;
+    padding: 30px;
 }
 
 h1{
@@ -33,9 +34,22 @@ em strong{
 
 .beneficios{
     background: #F0FFF0;
+    padding: 20px;
 }
 
 h2{
     text-align: center;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+
+}
+
+.imagembeneficios{
+    width: 50%;
 }
 
