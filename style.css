@@ -4,10 +4,6 @@
 Em HTML é class  =  Em CSS é . (pode vários elementos)
 */
 
-body{
-      
-}
-
 #banner{
     width: 100%;    
 }
@@ -16,6 +12,11 @@ body{
     background: #F6E3C3;
     padding: 30px;
 }
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
 
 .titulo-centralizado{
     text-align: center;
