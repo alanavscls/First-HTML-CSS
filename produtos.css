@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+header{
+    background: #F6E3C3;
+}
+
+nav li{
+    display: inline;
+}
+
+
