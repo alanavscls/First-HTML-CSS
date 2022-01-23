@@ -1,11 +1,25 @@
 @charset "UTF-8";
 
+#logopagina{
+    width: 220px;
+    height: 220px;
+}
+
 header{
     background: #F6E3C3;
 }
 
 nav li{
-    display: inline;
+    display: inline; /*Uso para alterar o estilo "block" das listas para que fiquem lado a lado.*/
+    margin: 0 0 0 15px;
+}
+
+nav a{ /*Vou alterar isso porque não é "legal" deixar os nomes dos conteúdos das listas em caixa alta no HTML. Eu altero visualmente apenas no CSS.*/
+   text-transform: uppercase;
+   color: #000000;
+   font-weight: bold; /*Deixando o texto em negrito. Repare que no HTML não usei a tag para isso, alterei só no CSS.*/
+   font-size: 20px;
+   text-decoration: none; /*Usei porque o "home, produtos e contato" sem isso fica com um sublinhado e eu não quero.*/ 
 }
 
 
