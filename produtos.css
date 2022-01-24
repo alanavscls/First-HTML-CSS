@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 #logopagina{
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
 }
 
 header{
-    background: #F6E3C3;
+    background: #ACE6FE;
 }
 
 nav li{
@@ -14,12 +14,11 @@ nav li{
     margin: 0 0 0 15px;
 }
 
-nav a{ /*Vou alterar isso porque não é "legal" deixar os nomes dos conteúdos das listas em caixa alta no HTML. Eu altero visualmente apenas no CSS.*/
-   text-transform: uppercase;
-   color: #000000;
-   font-weight: bold; /*Deixando o texto em negrito. Repare que no HTML não usei a tag para isso, alterei só no CSS.*/
+nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das listas em caixa alta no HTML. Eu altero visualmente apenas no CSS.*/
+   text-transform: uppercase; /*A propriedade "text-transform" é a responsável pela transformação do texto para maiúsculo, quando usamos o valor "uppercase"*/
+   color: #225378;
+   font-weight: bold; /*A propriedade "font-weight" serve para alterar o peso da fonte, inclusive para negrito, com o valor "bold".*/
    font-size: 20px;
-   text-decoration: none; /*Usei porque o "home, produtos e contato" sem isso fica com um sublinhado e eu não quero.*/ 
+   text-decoration: none; /*Serve para alterar a propriedade de exibição de um link. Quando uso o valor "none" quer dizer que ele não será sublinhado.*/ 
 }
-
 
