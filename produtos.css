@@ -7,6 +7,13 @@
 
 header{
     background: #ACE6FE;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px; /*Essa largura é "padrão" usado na web porque a maioria das boas resoluções são de 1260px de largura, usando esse valor estamos numa boa margem.*/
+    margin: 0 auto;
 }
 
 nav{
