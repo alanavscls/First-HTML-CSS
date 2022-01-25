@@ -9,6 +9,12 @@ header{
     background: #ACE6FE;
 }
 
+nav{
+   position: absolute; 
+   top: 90px;
+   right: 0;
+}
+
 nav li{
     display: inline; /*Uso para alterar o estilo "block" das listas para que fiquem lado a lado.*/
     margin: 0 0 0 15px;
