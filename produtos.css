@@ -11,13 +11,13 @@ header{
 }
 
 .caixa{
-    position: relative;
+    position: relative; /*Com o "relative" o elemento pode ser deslocado com o seu ponto inicial fixo. */
     width: 940px; /*Essa largura é "padrão" usado na web porque a maioria das boas resoluções são de 1260px de largura, usando esse valor estamos numa boa margem.*/
-    margin: 0 auto;
+    margin: 0 auto; /*Usamos o "auto" porque queremos alinhar a div ao centro, esse auto se refere às margens laterais.*/
 }
 
 nav{
-   position: absolute; 
+   position: absolute; /*O "absolute" serve para mudar a posição do ponto inicial que ele se encontra. Assim, consigo posicionar o elemento em qualquer lugar da página.*/
    top: 90px;
    right: 0;
 }
