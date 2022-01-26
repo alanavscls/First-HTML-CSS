@@ -36,25 +36,33 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
 }
 
 .produtos{ /*Esse aqui eu estou alterando a forma como as listas aparecem e o texto, por isso não acrescentei no ".produtos li" porque lá eu modifiquei o comportamento do elemento para ficar lado a lado.*/
-    width: 940px;
+    width: 1240px;
     margin: 0 auto;
-    padding: 50px 0;
-    
+    padding: 10px 0;    
+}
+
+.espaco-banho{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background que coloquei estava ficando errado.*/
+    margin-top: 22px;
+}
+
+.espaco-banhoetosa{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background que coloquei estava ficando errado.*/
+    margin-top: 9px;
 }
 
 .produtos li{
-    display: inline-block; /*Essa forma preserva a largura do elemento, mas conseguimos modificar o comportamento.*/
+    display: inline-block; /*O elemento aqui continua com sua característica, mas conseguimos modificar o conteúdo(o tamanho pode ser ajustado na largura e altura).*/
     text-align: center;
     width: 30%;
     vertical-align: top; /*Preciso usar porque o "inline-block" alinha por baixo, mas eu quero em cima.*/
     font-size: 20px;
     color: #F9A21D;
-    
+    background: #F0FFF0;    
 }
 
 .produtos h2{ /*Vamos mexer no título*/
     font-size: 30px;
     font-weight: bold; 
+    text-decoration: underline;
 }
 
 .produtos p{
