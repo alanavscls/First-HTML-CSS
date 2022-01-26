@@ -47,9 +47,20 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
     text-align: center;
     width: 30%;
     vertical-align: top; /*Preciso usar porque o "inline-block" alinha por baixo, mas eu quero em cima.*/
+    font-size: 20px;
+    color: #F9A21D;
     
 }
 
 .produtos h2{ /*Vamos mexer no título*/
-    
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos p{
+    color: black;
+}
+
+.preco{ /*Deixando só o preço do serviço em negrito*/
+    font-weight: bold
 }
