@@ -41,12 +41,13 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
     padding: 10px 0;    
 }
 
-.espaco-banho{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background que coloquei estava ficando errado.*/
+.espaco-banho{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background(que usei no ".produtos li")estava ficando errado.*/
     margin-top: 22px;
 }
 
-.espaco-banhoetosa{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background que coloquei estava ficando errado.*/
+.espaco-banhoetosa{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background(que usei no ".produtos li")estava ficando errado.*/
     margin-top: 9px;
+    margin-left: -10%; /*Usei para organizar a imagem do "banho e tosa" na posição que gostaria*/
 }
 
 .produtos li{
@@ -55,9 +56,20 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
     width: 30%;
     vertical-align: top; /*Preciso usar porque o "inline-block" alinha por baixo, mas eu quero em cima.*/
     font-size: 20px;
-    color: #F9A21D;
-    background: #F0FFF0;    
+    color: #225378; 
+    background: #F0FFF0; 
+    margin: 0 1%; /*Quero aumentar o espaço dos lados entre os serviços*/ 
+    margin-top: 30px;  
+    padding: 30px 20px;
+    box-sizing: border-box; /*Essas duas alterações foram retiradas momentaneamente*/
+    border-color: #EC7F00 ;
+    border-width: 2px;
+    border-style: solid; /*Eu posso fazer a declaração única da border desse jeito -> border: 2px solid #EC7F00*/
+    border-radius: 3px;
 }
+
+/*Alterando apenas a dimensão do "banho e tosa"*/
+
 
 .produtos h2{ /*Vamos mexer no título*/
     font-size: 30px;
