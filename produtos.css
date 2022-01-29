@@ -35,9 +35,9 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
    text-decoration: none; /*Serve para alterar a propriedade de exibição de um link. Quando uso o valor "none" quer dizer que ele não será sublinhado.*/ 
 }
 
-nav a:hover {
-    color: #F2FFE3;
-    text-decoration: underline;
+nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os elementos do HTML consigo mapear o comportamento com CSS e alterar o visual.*/
+    color: #EC7F00;
+    text-decoration: underline; 
 }
 
 .produtos{ /*Esse aqui eu estou alterando a forma como as listas aparecem e o texto, por isso não acrescentei no ".produtos li" porque lá eu modifiquei o comportamento do elemento para ficar lado a lado.*/
@@ -67,14 +67,27 @@ nav a:hover {
     margin-top: 30px;  
     padding: 30px 20px;
     box-sizing: border-box; /*Essas duas alterações foram retiradas momentaneamente*/
-    border-color: #EC7F00 ;
+    border-color: #1696A3;
     border-width: 2px;
     border-style: solid; /*Eu posso fazer a declaração única da border desse jeito -> border: 2px solid #EC7F00*/
     border-radius: 10px;
 }
 
-/*Alterando apenas a dimensão do "banho e tosa"*/
+.produtos li:hover{     /*Nós lemos de traz para frente: "quando o mouse estiver por cima(hover) eu altero a cor do item do .produtos li"*/
+    border-color: #EC7F00;
+}
 
+.produtos li:active{    /*O "active" vai alterar o comportamento do elemento quando o elemento for clicado e pressionado.*/
+    border-color: #3B9542;
+}
+
+/*Quando eu quero que o mouse esteja por cima de um elemento e afete outro elemento dentro dele eu tenho que fazer dessa forma:*/
+.produtos li:hover h2{   /*Lê-se: no .produtos li quando o mouse estiver por cima altere o H2.*/
+    font-size: 40px;
+} 
+
+
+/*Alterando apenas a dimensão do "banho e tosa"*/
 
 .produtos h2{ /*Vamos mexer no título*/
     font-size: 30px;
