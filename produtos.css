@@ -35,6 +35,11 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
    text-decoration: none; /*Serve para alterar a propriedade de exibição de um link. Quando uso o valor "none" quer dizer que ele não será sublinhado.*/ 
 }
 
+nav a:hover {
+    color: #F2FFE3;
+    text-decoration: underline;
+}
+
 .produtos{ /*Esse aqui eu estou alterando a forma como as listas aparecem e o texto, por isso não acrescentei no ".produtos li" porque lá eu modifiquei o comportamento do elemento para ficar lado a lado.*/
     width: 1240px;
     margin: 0 auto;
@@ -65,7 +70,7 @@ nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das l
     border-color: #EC7F00 ;
     border-width: 2px;
     border-style: solid; /*Eu posso fazer a declaração única da border desse jeito -> border: 2px solid #EC7F00*/
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 /*Alterando apenas a dimensão do "banho e tosa"*/
