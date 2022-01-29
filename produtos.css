@@ -78,14 +78,13 @@ nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os e
 }
 
 .produtos li:active{    /*O "active" vai alterar o comportamento do elemento quando o elemento for clicado e pressionado.*/
-    border-color: #3B9542;
+    border-color: #8E2800;
 }
 
 /*Quando eu quero que o mouse esteja por cima de um elemento e afete outro elemento dentro dele eu tenho que fazer dessa forma:*/
 .produtos li:hover h2{   /*Lê-se: no .produtos li quando o mouse estiver por cima altere o H2.*/
     font-size: 40px;
 } 
-
 
 /*Alterando apenas a dimensão do "banho e tosa"*/
 
@@ -107,4 +106,9 @@ nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os e
     font-size: 28px;
     font-weight: bold;
     margin-top: 10px;        
+}
+
+footer{
+    text-align: center;
+    
 }
