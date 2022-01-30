@@ -40,6 +40,13 @@ nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os e
     text-decoration: underline; 
 }
 
+.servicos{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: larger;
+}
+
 .produtos{ /*Esse aqui eu estou alterando a forma como as listas aparecem e o texto, por isso não acrescentei no ".produtos li" porque lá eu modifiquei o comportamento do elemento para ficar lado a lado.*/
     width: 1240px;
     margin: 0 auto;
