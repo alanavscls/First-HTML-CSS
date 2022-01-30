@@ -110,7 +110,13 @@ nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os e
 
 footer{
     text-align: center;
-    background: url("azul.jpg"); /*Dessa forma é como adicionamos uma imagem pelo CSS.*/
-    padding: 58px 0;
+    background: #ACE6FE;
+    padding: 10px 0;
+    margin-top: 96px;
+}
 
+.copyright{
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 5px;
 }
