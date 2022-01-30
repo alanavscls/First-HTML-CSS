@@ -1,60 +1,129 @@
 @charset "UTF-8";
 
-/*Em HTML é id   =  Em CSS é # (só pode um elemento por página)
-Em HTML é class  =  Em CSS é . (pode vários elementos)
-*/
-
-#banner{
-    width: 100%;    
+#logopagina{
+    width: 190px;
+    height: 190px;
 }
 
-.principal{
-    background: #F6E3C3;
-    padding: 30px;
+header{
+    background: #ACE6FE;
+    padding: 20px 0;
 }
 
-.titulo-principal{
-    padding-left: 20px;
+.caixa{
+    position: relative; /*Com o "relative" o elemento pode ser deslocado com o seu ponto inicial fixo. */
+    width: 940px; /*Essa largura é "padrão" usado na web porque a maioria das boas resoluções são de 1260px de largura, usando esse valor estamos numa boa margem.*/
+    margin: 0 auto; /*Usamos o "auto" porque queremos alinhar a div ao centro, esse auto se refere às margens laterais.*/
 }
 
+nav{
+   position: absolute; /*O "absolute" serve para mudar a posição do ponto inicial que ele se encontra. Assim, consigo posicionar o elemento em qualquer lugar da página.*/
+   top: 90px;
+   right: 0;
+}
 
-.titulo-centralizado{
+nav li{
+    display: inline; /*Uso para alterar o estilo "block" das listas para que fiquem lado a lado.*/
+    margin: 0 0 0 15px;
+}
+
+nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das listas em caixa alta no HTML. Eu altero visualmente apenas no CSS.*/
+   text-transform: uppercase; /*A propriedade "text-transform" é a responsável pela transformação do texto para maiúsculo, quando usamos o valor "uppercase"*/
+   color: #225378;
+   font-weight: bold; /*A propriedade "font-weight" serve para alterar o peso da fonte, inclusive para negrito, com o valor "bold".*/
+   font-size: 20px;
+   text-decoration: none; /*Serve para alterar a propriedade de exibição de um link. Quando uso o valor "none" quer dizer que ele não será sublinhado.*/ 
+}
+
+nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os elementos do HTML consigo mapear o comportamento com CSS e alterar o visual.*/
+    color: #EC7F00;
+    text-decoration: underline; 
+}
+
+.servicos{
     text-align: center;
-
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: larger;
 }
 
-p{
+.produtos{ /*Esse aqui eu estou alterando a forma como as listas aparecem e o texto, por isso não acrescentei no ".produtos li" porque lá eu modifiquei o comportamento do elemento para ficar lado a lado.*/
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 0;    
+}
+
+.espaco-banho{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background(que usei no ".produtos li")estava ficando errado.*/
+    margin-top: 22px;
+}
+
+.espaco-banhoetosa{ /*Precisei modificar pois o tamanho da imagem estava diferente e, consequentemente, o background(que usei no ".produtos li")estava ficando errado.*/
+    margin-top: 9px;
+    margin-left: -10%; /*Usei para organizar a imagem do "banho e tosa" na posição que gostaria*/
+}
+
+.produtos li{
+    display: inline-block; /*O elemento aqui continua com sua característica, mas conseguimos modificar o conteúdo(o tamanho pode ser ajustado na largura e altura).*/
     text-align: center;
-    /*Aqui se eu colocasse o background: #cccccc só teríamos na parte escrita do texto. Mas não queremos isso, a intenção era deixar toda a página cinza. Sendo assim, o mais apropriado seria colocar a tag no body.*/
+    width: 30%;
+    vertical-align: top; /*Preciso usar porque o "inline-block" alinha por baixo, mas eu quero em cima.*/
+    font-size: 20px;
+    color: #225378; 
+    background: #F0FFF0; 
+    margin: 0 1%; /*Quero aumentar o espaço dos lados entre os serviços*/ 
+    margin-top: 30px;  
+    padding: 30px 20px;
+    box-sizing: border-box; /*Essas duas alterações foram retiradas momentaneamente*/
+    border-color: #1696A3;
+    border-width: 2px;
+    border-style: solid; /*Eu posso fazer a declaração única da border desse jeito -> border: 2px solid #EC7F00*/
+    border-radius: 10px;
 }
 
-
-#missao{/*Quando eu tenho um id na tag do HTML eu referencio ele no CSS com a #*/
-    font-size: 25px;
+.produtos li:hover{     /*Nós lemos de traz para frente: "quando o mouse estiver por cima(hover) eu altero a cor do item do .produtos li"*/
+    border-color: #EC7F00;
 }
 
-em strong{
-    color: #B2896D; 
-}/*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
+.produtos li:active{    /*O "active" vai alterar o comportamento do elemento quando o elemento for clicado e pressionado.*/
+    border-color: #8E2800;
+}
 
-.itens{
+/*Quando eu quero que o mouse esteja por cima de um elemento e afete outro elemento dentro dele eu tenho que fazer dessa forma:*/
+.produtos li:hover h2{   /*Lê-se: no .produtos li quando o mouse estiver por cima altere o H2.*/
+    font-size: 40px;
+} 
+
+/*Alterando apenas a dimensão do "banho e tosa"*/
+
+.produtos h2{ /*Vamos mexer no título*/
+    font-size: 30px;
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
+.produtos p{
+    color: black;
+}
+
+.produto-descricao{
+    font-size: 22px;
+}
+
+.preco{ /*Deixando só o preço do serviço em negrito*/
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;        
+}
+
+footer{
+    text-align: center;
+    background: #ACE6FE;
+    padding: 10px 0;
+    margin-top: 96px;
+}
+
+.copyright{
     font-style: italic;
+    font-size: 13px;
+    margin-top: 5px;
 }
-
-.beneficios{
-    background: #F0FFF0;
-    padding: 20px;
-}
-
-ul{
-    display: inline-block; /*Usamos para alterar a forma com que a imagem fica pois as listas tem comportamento "block" e a imagem acabava ficando embaixo e eu não queria isso.*/
-    vertical-align: top; /*Usamos para alinhar a imagem para a linha de cima onde começa a lista de itens.*/
-    width: 20%;
-    margin-right: 15%; /*Uso para separar a imagem dos itens da lista*/
-
-}
-
-.imagembeneficios{
-    width: 50%;
-}
-

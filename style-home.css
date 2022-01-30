@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*Em HTML é id   =  Em CSS é # (só pode um elemento por página)
+Em HTML é class  =  Em CSS é . (pode vários elementos)
+*/
+
+#banner{
+    width: 100%;    
+}
+
+.principal{
+    background: #F6E3C3;
+    padding: 30px;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+
+.titulo-centralizado{
+    text-align: center;
+
+}
+
+p{
+    text-align: center;
+    /*Aqui se eu colocasse o background: #cccccc só teríamos na parte escrita do texto. Mas não queremos isso, a intenção era deixar toda a página cinza. Sendo assim, o mais apropriado seria colocar a tag no body.*/
+}
+
+
+#missao{/*Quando eu tenho um id na tag do HTML eu referencio ele no CSS com a #*/
+    font-size: 25px;
+}
+
+em strong{
+    color: #B2896D; 
+}/*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
+
+.itens{
+    font-style: italic;
+}
+
+.beneficios{
+    background: #F0FFF0;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block; /*Usamos para alterar a forma com que a imagem fica pois as listas tem comportamento "block" e a imagem acabava ficando embaixo e eu não queria isso.*/
+    vertical-align: top; /*Usamos para alinhar a imagem para a linha de cima onde começa a lista de itens.*/
+    width: 20%;
+    margin-right: 15%; /*Uso para separar a imagem dos itens da lista*/
+
+}
+
+.imagembeneficios{
+    width: 50%;
+}
+
