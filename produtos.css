@@ -110,5 +110,6 @@ nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os e
 
 footer{
     text-align: center;
-    
+    background: #CCCCCC;
+
 }
