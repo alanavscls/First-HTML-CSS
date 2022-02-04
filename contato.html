@@ -37,15 +37,12 @@
                 
                 <div>
                     <p>Como prefere o nosso contato?</p>
-                    <label for="radio-email">E-mail</label>
-                    <input type="radio" name="contato" value="email" id="radio-email"> <!--Esse "type radio" é o tipo que nos permite ter uma opção para selecionar (a bolinha que clicamos).-->
-                    <label for="radio-telefone">Telefone</label>
-                    <input type="radio" name="contato" value="telefone" id="radio-telefone"> <!--A propriedade "name" só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo só um selecionado.-->
-                    <label for="radio-whatsapp">WhatsApp</label>
-                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> <!--Repare que a propriedade name="contato" está nos 3 input (do "type radio") porque eu preciso que ao clicar em alguma opção o outro se desmarque. Se não colocar essa propriedade todos ficam marcados ao clicar e não é o que queremos.-->
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label> <!--Esse "type radio" é o tipo que nos permite ter uma opção para selecionar (a bolinha que clicamos).-->                    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label> <!--A propriedade "name" só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo só um selecionado.-->                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label> <!--Repare que a propriedade name="contato" está nos 3 input (do "type radio") porque eu preciso que ao clicar em alguma opção o outro se desmarque. Se não colocar essa propriedade todos ficam marcados ao clicar e não é o que queremos.-->                    
                 </div>
-
-                <label><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label> <!--Nós também podemos adicionar o input dentro do label para que eu não precise colocar o for e o id. Essa é outra forma de fazer.-->
+                
+                <label><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label> <!--Nós colocamos o "input" logo depois do "label" na mesma linha para que a "bolinha clicável" fique antes do texto. Se pularmos a linha e escrevermos o "input" depois do label a "bolinha" vai ficar depois.-->
 
 
                 <input type="submit" value="Enviar formulário"> <!--Esse input não precisa de um label porque é o botão de enviar os dados acima que serão coletados.-->
