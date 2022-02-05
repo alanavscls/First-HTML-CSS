@@ -172,3 +172,17 @@ form label, form legend{
     transform: scale(1.1); /*A propriedade transform serve para mudarmos o tamanho ou o comportamento do elemento. O "transform: (scale)" aumenta o elemento proporcionalmente.*/
 }
 
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #ACE6FE;
+    color: black;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
