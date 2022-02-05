@@ -163,11 +163,12 @@ form label, form legend{
     font-size: 18px;
     border: none; /*Eu não quero deixar a borda no botão, por isso uso o "none".*/
     border-radius: 5px; 
-    transition: 1s background; /*A propriedade "transition" promove uma transição visual de um elemento, no nosso caso usamos para a cor do hover alterar mais suavemente.*/
+    transition: 1s all; /*A propriedade "transition" promove uma transição visual de um elemento, no nosso caso usamos para a cor do hover alterar mais suavemente e para o aumento da escala (por isso usamos o all.)*/
     cursor: pointer; /*Identifica para o usuário que é clicável (o cursor deixa de ser uma seta e fica uma mãozinha no botão).*/
 }
 
 .enviar:hover{
     background: #225378;
+    transform: scale(1.1); /*A propriedade transform serve para mudarmos o tamanho ou o comportamento do elemento. O "transform: (scale)" aumenta o elemento proporcionalmente.*/
 }
 
