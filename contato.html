@@ -52,9 +52,30 @@
 
                 <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label> <!--Nós colocamos o "input" logo depois do "label" na mesma linha para que a "bolinha clicável" fique antes do texto. Se pularmos a linha e escrevermos o "input" depois do label a "bolinha" vai ficar depois.-->
 
-
                 <input type="submit" value="Enviar formulário" class="enviar"> <!--Esse input não precisa de um label porque é o botão de enviar os dados acima que serão coletados.-->
             </form>
+            <table>
+                <thead> <!--É o cabeçalho da tabela.-->
+                    <tr> <!--tr marca uma linha de uma tabela-->
+                        <th>Dia</th> 
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda a Sexta</td> <!--td marca uma coluna de uma tabela-->
+                        <td>08:00 às 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>09:00 às 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>08:00 às 12:00</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </main>
 
