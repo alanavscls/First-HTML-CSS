@@ -4,23 +4,60 @@
 Em HTML é class  =  Em CSS é . (pode vários elementos)
 */
 
-#banner{
-    width: 100%;    
+#logopagina{
+    width: 190px;
+    height: 190px;
+}
+
+header{
+    background: #ACE6FE;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative; /*Com o "relative" o elemento pode ser deslocado com o seu ponto inicial fixo. */
+    width: 940px; /*Essa largura é "padrão" usado na web porque a maioria das boas resoluções são de 1260px de largura, usando esse valor estamos numa boa margem.*/
+    margin: 0 auto; /*Usamos o "auto" porque queremos alinhar a div ao centro, esse auto se refere às margens laterais.*/
+}
+
+nav{
+   position: absolute; /*O "absolute" serve para mudar a posição do ponto inicial que ele se encontra. Assim, consigo posicionar o elemento em qualquer lugar da página.*/
+   top: 90px;
+   right: 0;
+}
+
+nav li{
+    display: inline; /*Uso para alterar o estilo "block" das listas para que fiquem lado a lado.*/
+    margin: 0 0 0 15px;   
+}
+
+nav a{ /*Vou alterar porque não é "legal" deixar os nomes dos conteúdos das listas em caixa alta no HTML. Eu altero visualmente apenas no CSS.*/
+   text-transform: uppercase; /*A propriedade "text-transform" é a responsável pela transformação do texto para maiúsculo, quando usamos o valor "uppercase"*/
+   color: #225378;
+   font-weight: bold; /*A propriedade "font-weight" serve para alterar o peso da fonte, inclusive para negrito, com o valor "bold".*/
+   font-size: 20px;
+   text-decoration: none; /*Serve para alterar a propriedade de exibição de um link. Quando uso o valor "none" quer dizer que ele não será sublinhado.*/   
+}
+
+nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os elementos do HTML consigo mapear o comportamento com CSS e alterar o visual.*/
+    color: #EC7F00;
+    text-decoration: underline; 
 }
 
 .principal{
-    background: #F6E3C3;
-    padding: 30px;
+    background: #F2FFE3;
+    padding: 50px;
 }
 
 .titulo-principal{
     padding-left: 20px;
 }
 
-
 .titulo-centralizado{
     text-align: center;
-
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 p{
@@ -28,22 +65,25 @@ p{
     /*Aqui se eu colocasse o background: #cccccc só teríamos na parte escrita do texto. Mas não queremos isso, a intenção era deixar toda a página cinza. Sendo assim, o mais apropriado seria colocar a tag no body.*/
 }
 
-
 #missao{/*Quando eu tenho um id na tag do HTML eu referencio ele no CSS com a #*/
     font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 em strong{
-    color: #B2896D; 
-}/*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
+    color: #225378; 
+} /*Colocamos o "em" porque no HTML temos outro strong, se não fizermos isso o conteúdo depois do "strong" ficaria vermelho também. Nesse caso estamos especificando qual eu quero com a cor. É a famosa estrutura em cascata.*/
 
 .itens{
     font-style: italic;
+    font-size: 20px;
 }
 
 .beneficios{
-    background: #F0FFF0;
-    padding: 20px;
+    background: #F2FFE3;
+    padding: 50px;
+    margin-bottom: -95px;
 }
 
 ul{
@@ -56,5 +96,20 @@ ul{
 
 .imagembeneficios{
     width: 50%;
+    border-radius: 5px;
+}
+
+/*ALTERANDO O FOOTER*/
+footer{
+    text-align: center;
+    background: #ACE6FE;
+    padding: 10px 0;
+    margin-top: 96px;
+}
+
+.copyright{
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 5px;
 }
 

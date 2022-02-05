@@ -7,8 +7,9 @@
         <meta name="Keywords" content="" />
         <meta name="robots" content="ALL" />
         <meta name="Author" content="Alana Vasconcelos" />
-        <meta name="language" content="pt-br" />        
-        <link href="style-home.css" type="text/css" rel="stylesheet" /><!--Essa forma que colocamos é para o CSS externo, sendo assim, não tem necessidade de permanecer com a tag "style" dentro do head. Podemos tirá-la (vou deixar comentada só para nível de aprendizado mesmo). Também é a forma mais comum de apresentar o CSS.-->
+        <meta name="language" content="pt-br" /> 
+        <link href="reset.css" rel="stylesheet"/>       
+        <link href="style.css" type="text/css" rel="stylesheet" /><!--Essa forma que colocamos é para o CSS externo, sendo assim, não tem necessidade de permanecer com a tag "style" dentro do head. Podemos tirá-la (vou deixar comentada só para nível de aprendizado mesmo). Também é a forma mais comum de apresentar o CSS.-->
         <!--<style>
             p{
                 text-align: center;
@@ -17,25 +18,43 @@
 
     </head>
     <body>
-        <header> <!--essa tag é de conteúdo do HTML e não de estrutura (não confundir header com head)-->
-            <h1 class="titulo-principal">Mundo Pet</h1>
+        <header> <!--Essa tag é de conteúdo do HTML e não de estrutura (não confundir header com head)-->
+            <div class="caixa"> 
+                <h1><img src="logoprodutos.png" id="logopagina" alt="Logo do Mundo Pet" /></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>  
         </header>
-        <img id="banner" src="banner.jpg" />
-        <div class="principal">
-            <h2 class="titulo-centralizado">Sobre o Mundo Pet</h2><!--O CSS desse jeito(com a tag "style") é chamado de inline. Repare que se eu quiser que os outros parágrafos tenham a alteração eu terei que repetir isso em cada um deles (não é viável para quando se tem muito texto, vamos ver a outra forma de usar no "head".)-->
-            <p>Localizado no coração da cidade o <strong>Mundo Pet</strong> traz para o mercado o que há de melhor para o seu animal de estimação. Fundado em 2015, o Mundo Pet já é destaque na cidade e conquista novos clientes a cada dia.</p>
-            <p id="missao">Nossa missão é: <em><strong>"Proporcionar aos nossos clientes o melhor em serviços e produtos transmitindo qualidade e confiança através do amor que temos pelos animais".</strong></em></p>
-            <p>Oferecemos profissionais experientes e especializados no cuidado do seu pet. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-        </div>
-        <div class="beneficios">
-            <h3 class="titulo-centralizado">Benefícios</h3>
-            <ul>
-                <li class="itens">Atendimento humanizado;</li>
-                <li class="itens">Espaço para consultas e para tosa/banho;</li>
-                <li class="itens">Profissionais qualificados;</li>
-                <li class="itens">Localização.</li>
-            </ul>
-            <img src="vet.png" class="imagembeneficios" />
-        </div>      
+
+        <img id="banner" src="pets.png">
+
+        <main>
+            <section class="principal">
+                <h2 class="titulo-centralizado">Sobre o Mundo Pet</h2><!--O CSS desse jeito(com a tag "style") é chamado de inline. Repare que se eu quiser que os outros parágrafos tenham a alteração eu terei que repetir isso em cada um deles (não é viável para quando se tem muito texto, vamos ver a outra forma de usar no "head".)-->
+                <p>Localizado no coração da cidade o <strong>Mundo Pet</strong> traz para o mercado o que há de melhor para o seu animal de estimação. Fundado em 2015, o Mundo Pet já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                <p id="missao">Nossa missão é: <em><strong>"Proporcionar aos nossos clientes o melhor em serviços e produtos transmitindo qualidade e confiança através do amor que temos pelos animais".</strong></em></p>
+                <p>Oferecemos profissionais experientes e especializados no cuidado do seu pet. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </section>
+
+            <section class="beneficios">
+                <h3 class="titulo-centralizado">Benefícios</h3>
+                <ul>
+                    <li class="itens">Atendimento humanizado;</li>
+                    <li class="itens">Espaço para consultas e para tosa/banho;</li>
+                    <li class="itens">Profissionais qualificados;</li>
+                    <li class="itens">Localização.</li>
+                </ul>
+                <img src="vet.png" class="imagembeneficios" />
+            </section>
+        </main>
+        <footer>
+            <img src="logoprodutos2.png" alt="Logo do Mundo Pet"/> <!--Usando o "alt" estamos deixando o código mais acessível.-->
+            <p class="copyright">&copy; Copyright Mundo Pet - 2022</p> <!--Esse &copy; chama-se unicode, é uma linguagem que tem vários itens/caracteres diferentes para serem representados (pesquisar em: unicode-table.com)-->
+        </footer>      
     </body>
 </html>
