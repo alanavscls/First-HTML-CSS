@@ -41,6 +41,14 @@
                     <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label> <!--A propriedade "name" só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo só um selecionado.-->                    
                     <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label> <!--Repare que a propriedade name="contato" está nos 3 input (do "type radio") porque eu preciso que ao clicar em alguma opção o outro se desmarque. Se não colocar essa propriedade todos ficam marcados ao clicar e não é o que queremos.-->                    
                 </div>
+                <div>
+                    <p>Qual horário prefere ser atendido?</p>
+                    <select>
+                        <option>Manhã</option> <!--A tag option cria os itens selecionáveis de um select.-->
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
 
                 <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label> <!--Nós colocamos o "input" logo depois do "label" na mesma linha para que a "bolinha clicável" fique antes do texto. Se pularmos a linha e escrevermos o "input" depois do label a "bolinha" vai ficar depois.-->
 
