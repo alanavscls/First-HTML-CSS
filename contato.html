@@ -14,7 +14,7 @@
     <body> <!--Informação: essa tag serve para informarmos ao navegador quais informações ele deve exibir.-->
         <header>
             <div class="caixa"> <!--Utilizamos essa div porque queremos que o conteúdo do "nav" esteja centralizado, sem isso ele fica muito lateralizado.-->
-                <h1><img src="logoprodutos.png" id="logopagina" /></h1>
+                <h1><img src="logoprodutos.png" id="logopagina" alt="Logo do Mundo Pet" /></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -35,14 +35,14 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!--Eu quero que o usuário tenha a possibilidade de escrever mais de uma linha de texto, por isso a tag é diferente. A propriedade "required" torna o preenchimento obrigatório.-->
                 
-                <fieldset> <!--Essa tag é referente a configuração dos campos referentes a um assunto específico. Sendo assim, usar o fieldset é mais apropriado do que uma "div" nesse caso.-->
+                <fieldset> <!--Essa tag é para a configuração dos campos referentes a um assunto específico. Sendo assim, usar o fieldset é mais apropriado do que uma "div" nesse caso.-->
                     <legend>Como prefere o nosso contato?</legend> <!--Para o título de um fieldset nós não usamos a tag "p" e sim a legend.-->
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label> <!--Esse "type radio" é o tipo que nos permite ter uma opção para selecionar (a bolinha que clicamos).-->                    
                     <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label> <!--A propriedade "name" só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo só um selecionado.-->                    
                     <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> <!--Repare que a propriedade name="contato" está nos 3 input (do "type radio") porque eu preciso que ao clicar em alguma opção o outro se desmarque. Se não colocar essa propriedade todos ficam marcados ao clicar e não é o que queremos.-->                    
                 </fieldset>
                 <fieldset>
-                    <legend>Qual horário prefere ser atendido?</legend>
+                    <legend>Qual horário prefere ser atendido?</legend> <!--Legend usamos para um título de um grupo de campos em qualquer formulário.-->
                     <select>
                         <option>Manhã</option> <!--A tag option cria os itens selecionáveis de um select.-->
                         <option>Tarde</option>
@@ -53,14 +53,14 @@
                 <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label> <!--Nós colocamos o "input" logo depois do "label" na mesma linha para que a "bolinha clicável" fique antes do texto. Se pularmos a linha e escrevermos o "input" depois do label a "bolinha" vai ficar depois.-->
 
 
-                <input type="submit" value="Enviar formulário"> <!--Esse input não precisa de um label porque é o botão de enviar os dados acima que serão coletados.-->
+                <input type="submit" value="Enviar formulário" class="enviar"> <!--Esse input não precisa de um label porque é o botão de enviar os dados acima que serão coletados.-->
             </form>
 
         </main>
 
 
         <footer>
-            <img src="logoprodutos2.png" />
+            <img src="logoprodutos2.png" alt="Logo do Mundo Pet"/> <!--Usando o "alt" estamos deixando o código mais acessível.-->
             <p class="copyright">&copy; Copyright Mundo Pet - 2022</p> <!--Esse &copy; chama-se unicode, é uma linguagem que tem vários itens/caracteres diferentes para serem representados (pesquisar em: unicode-table.com)-->
         </footer>
     </body>

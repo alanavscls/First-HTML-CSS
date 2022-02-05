@@ -154,3 +154,20 @@ form label, form legend{
     margin: 20px 0;
 }
 
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: #EC7F00;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none; /*Eu não quero deixar a borda no botão, por isso uso o "none".*/
+    border-radius: 5px; 
+    transition: 1s background; /*A propriedade "transition" promove uma transição visual de um elemento, no nosso caso usamos para a cor do hover alterar mais suavemente.*/
+    cursor: pointer; /*Identifica para o usuário que é clicável (o cursor deixa de ser uma seta e fica uma mãozinha no botão).*/
+}
+
+.enviar:hover{
+    background: #225378;
+}
+
