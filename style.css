@@ -127,6 +127,7 @@ footer{
     font-size: 13px;
     margin-top: 5px;
 }
+
 /*ALTERANDO A PÁGINA CONTATO.HTML*/
 main{
   width: 940px;  
@@ -186,3 +187,51 @@ td, th{
     border: 1px solid black;
     padding: 8px 15px;
 }
+
+/*ALTERANDO A PÁGINA INICIAL/HOME*/
+.banner{
+   width: 70%;
+   margin-left: 300px;
+}
+
+.titulo-sobre{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*O clear limpa o float e o que vem depois dele não será afetado.*/
+}
+
+.principal p{
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+#texto-sobre{
+    margin-left: 190px;
+}
+
+.foto-sobre{
+    width: 170px;
+    float: left; /*float serve para deslocar o elemento e deixar os outros elementos ao redor. No caso, estou deslocando a imagem e deixando o texto ao redor dela.*/
+    margin: 0 20px 20px 0;
+}
+
+.titulo-beneficios{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.imagem-beneficios{
+    width: 60%;
+    border-radius: 5px;
+}
+
