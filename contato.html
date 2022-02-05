@@ -27,19 +27,19 @@
         <main>
             <form>
                 <label for="nomecompleto">Nome completo:</label> <!--"Label traz a informação para a entrada de dados do usuário. É uma etiqueta para a entrada de dados, para o "input".-->
-                <input type="text" id="nomecompleto" class="input-padrao"> <!--Input é a entrada de dados propriamente dita. OBS: teremos um "label" e um "input" juntos(repare que o "for" e o "id" estão iguais). Porque o primeiro é a informação para que serve a entrada de dados e o segundo é a entrada dos dados.-->
+                <input type="text" id="nomecompleto" class="input-padrao" required> <!--Input é a entrada de dados propriamente dita. OBS: teremos um "label" e um "input" juntos(repare que o "for" e o "id" estão iguais). Porque o primeiro é a informação para que serve a entrada de dados e o segundo é a entrada dos dados.-->
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" class="input-padrao"> <!--O site "mobileinputtypes.com" mostra visualmente qual o resultado esperado quando estamos o HTML5 de input em um celular. Fazendo o "type="email" faz com que o teclado do celular seja mudado. -->
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--O site "mobileinputtypes.com" mostra visualmente qual o resultado esperado quando estamos o HTML5 de input em um celular. Fazendo o "type="email" faz com que o teclado do celular seja mudado. -->
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" class="input-padrao"> <!--Usamos o mesmo conceito acima, com o "type="tel"" vai fazer com que o teclado numérico apareça e fica mais fácil para o usuário.-->
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) X XXXX-XXXX"> <!--Usamos o mesmo conceito acima, com o "type="tel"" vai fazer com que o teclado numérico apareça e fica mais fácil para o usuário.-->
                 <label for="mensagem">Mensagem:</label>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea> <!--Eu quero que o usuário tenha a possibilidade de escrever mais de uma linha de texto, por isso a tag é diferente.-->
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!--Eu quero que o usuário tenha a possibilidade de escrever mais de uma linha de texto, por isso a tag é diferente.-->
                 
                 <div>
                     <p>Como prefere o nosso contato?</p>
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label> <!--Esse "type radio" é o tipo que nos permite ter uma opção para selecionar (a bolinha que clicamos).-->                    
                     <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label> <!--A propriedade "name" só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo só um selecionado.-->                    
-                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label> <!--Repare que a propriedade name="contato" está nos 3 input (do "type radio") porque eu preciso que ao clicar em alguma opção o outro se desmarque. Se não colocar essa propriedade todos ficam marcados ao clicar e não é o que queremos.-->                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> <!--Repare que a propriedade name="contato" está nos 3 input (do "type radio") porque eu preciso que ao clicar em alguma opção o outro se desmarque. Se não colocar essa propriedade todos ficam marcados ao clicar e não é o que queremos.-->                    
                 </div>
                 <div>
                     <p>Qual horário prefere ser atendido?</p>
@@ -50,7 +50,7 @@
                     </select>
                 </div>
 
-                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label> <!--Nós colocamos o "input" logo depois do "label" na mesma linha para que a "bolinha clicável" fique antes do texto. Se pularmos a linha e escrevermos o "input" depois do label a "bolinha" vai ficar depois.-->
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label> <!--Nós colocamos o "input" logo depois do "label" na mesma linha para que a "bolinha clicável" fique antes do texto. Se pularmos a linha e escrevermos o "input" depois do label a "bolinha" vai ficar depois.-->
 
 
                 <input type="submit" value="Enviar formulário"> <!--Esse input não precisa de um label porque é o botão de enviar os dados acima que serão coletados.-->
