@@ -324,3 +324,10 @@ td, th{
     margin: 2em auto;
 }
 
+@media screen and (max-width: 480px){  /*Estou adaptando a formatação do CSS para dispositivos de, no máximo, 480px de tela.*/
+    body{
+
+    }
+
+}
+
