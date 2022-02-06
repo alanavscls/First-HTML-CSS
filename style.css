@@ -205,6 +205,10 @@ td, th{
     clear: left; /*O clear limpa o float e o que vem depois dele não será afetado.*/
 }
 
+.titulo-sobre::first-letter{ /*Isso é um pseudo-elemento do CSS que me permite deixar a primeira letra em destaque sem mexer no HTML.*/
+    font-weight: bold;      /*O destaque que eu quis dar foi tornar ela negrito.*/
+}
+
 .principal{
     padding: 3em 0;
     background: #FEFEFE;
@@ -241,6 +245,10 @@ td, th{
     margin: 0 0 1em;
 }
 
+.titulo-mapa::first-letter{
+    font-weight: bold;
+}
+
 .mapa{
     padding: 3em 0;
     background: linear-gradient(#FEFEFE, #8BB8CC);  /*Uso o linear-gradient e coloco em parânteses as cores que eu quero que ele tenha.*/  
@@ -249,7 +257,6 @@ td, th{
 .mapa-conteudo{
     width: 940px;
     margin: 0 auto;
-
 }
 
 .mapa p{
@@ -261,6 +268,10 @@ td, th{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
+}
+
+.titulo-beneficios::first-letter{
+    font-weight: bold;
 }
 
 .beneficios{
@@ -286,6 +297,10 @@ td, th{
 
 .itens:first-child{ /*"first-child" é um pseudo-elemento do CSS3 que me permite a seleção de um elemento específico(no caso eu queria que apenas o primeiro item da lista ficasse destacado.*/
     font-weight: bold; /*O destaque que eu dei foi o negrito para o primeiro item.*/
+}
+
+.itens::before{    /*me permite acrescentar um conteúdo antes do texto.*/
+    content: "✶"; /*No caso eu escolhi a estrela no site "unicode".*/
 }
 
 .imagem-beneficios{
