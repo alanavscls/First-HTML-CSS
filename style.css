@@ -325,8 +325,25 @@ td, th{
 }
 
 @media screen and (max-width: 480px){  /*Estou adaptando a formatação do CSS para dispositivos de, no máximo, 480px de tela.*/
-    body{
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
 
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .banner{
+        width: 50%;
+        margin-left: 103px;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
     }
 
 }
