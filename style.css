@@ -203,6 +203,7 @@ td, th{
     font-size: 2em;
     margin: 0 0 1em;
     clear: left; /*O clear limpa o float e o que vem depois dele não será afetado.*/
+    color: rgba(0,0,0, 0.5); /*A cor do título já estava preta anteriormente, mas o que quis fazer aqui é adicionar uma opacidade no texto. Para usar eu preciso que esteja em RGBA -o a significa alfa- e coloco as cores que quero em seguida, por último é a camada de opacidade (0.5)*/
 }
 
 .titulo-sobre::first-letter{ /*Isso é um pseudo-elemento do CSS que me permite deixar a primeira letra em destaque sem mexer no HTML.*/
@@ -243,6 +244,7 @@ td, th{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
+    color: rgba(0,0,0, 0.5);
 }
 
 .titulo-mapa::first-letter{
@@ -268,6 +270,7 @@ td, th{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
+    color: rgba(0,0,0, 0.5);
 }
 
 .titulo-beneficios::first-letter{ /*Com a propriedade ":first-letter" eu consigo marcar a primeira letra de qualquer elemento de texto.*/
@@ -306,6 +309,13 @@ td, th{
 .imagem-beneficios{
     width: 60%;
     border-radius: 5px;
+    opacity: 1;  /*Todos os elementos e todas as cores podem ter uma camada de opacidade.*/  
+    transition: 800ms; /*vai demorar essa quantidade de tempo para mudar quando o mouse estiver por cima.*/
+}
+
+.imagem-beneficios:hover{ /*Lê-se: quando o mouse estiver por cima dessa imagem ela estará com a visibilidade normal.*/    
+    opacity: 0.6; /*A opacity vai de 0 a 1. No zero não enxergarmos o elemento e no 1 enxergamos por completo, com a passagem de luz normal.*/
+
 }
 
 .video{
