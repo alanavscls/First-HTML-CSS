@@ -138,6 +138,11 @@ footer{
   margin: 0 auto;
 }*/
 
+.main-contato{
+    width: 940px;
+    margin: 0 auto;
+}
+
 form{
     margin: 40px 0;
 }
@@ -295,7 +300,6 @@ td, th{
 
 .itens{
     line-height: 1.5; /*Usamos para alterar a altura da linha para que o texto não fique muito colado um com o outro na lista que colocamos.*/
-
 }
 
 .itens:first-child{ /*"first-child" é um pseudo-elemento do CSS3 que me permite a seleção de um elemento específico(no caso eu queria que apenas o primeiro item da lista ficasse destacado.*/
@@ -316,7 +320,6 @@ td, th{
 
 .imagem-beneficios:hover{ /*Lê-se: quando o mouse estiver por cima dessa imagem ela estará com a visibilidade normal.*/    
     opacity: 0.6; /*A opacity vai de 0 a 1. No zero não enxergarmos o elemento e no 1 enxergamos por completo, com a passagem de luz normal.*/
-
 }
 
 .video{
