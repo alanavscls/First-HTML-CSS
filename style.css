@@ -270,7 +270,7 @@ td, th{
     margin: 0 0 1em;
 }
 
-.titulo-beneficios::first-letter{
+.titulo-beneficios::first-letter{ /*Com a propriedade ":first-letter" eu consigo marcar a primeira letra de qualquer elemento de texto.*/
     font-weight: bold;
 }
 
@@ -299,7 +299,7 @@ td, th{
     font-weight: bold; /*O destaque que eu dei foi o negrito para o primeiro item.*/
 }
 
-.itens::before{    /*me permite acrescentar um conteúdo antes do texto.*/
+.itens::before{    /*me permite acrescentar um conteúdo antes do texto. Criamos esse elemento na página, via CSS, antes do elemento do HTML.*/
     content: "✶"; /*No caso eu escolhi a estrela no site "unicode".*/
 }
 
