@@ -122,7 +122,7 @@ nav a:hover { /*O hover altera o visual do elemento que eu queira. Em todos os e
 footer{
     text-align: center;
     background: #ACE6FE;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 96px;
 }
 
@@ -133,10 +133,10 @@ footer{
 }
 
 /*ALTERANDO A PÁGINA CONTATO.HTML*/
-main{
+/*main{
   width: 940px;  
   margin: 0 auto;
-}
+}*/
 
 form{
     margin: 40px 0;
@@ -205,6 +205,13 @@ td, th{
     clear: left; /*O clear limpa o float e o que vem depois dele não será afetado.*/
 }
 
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;  
+    margin: 0 auto;
+}
+
 .principal p{
     margin: 0 0 1em;
     font-size: 20px;
@@ -234,25 +241,56 @@ td, th{
     margin: 0 0 1em;
 }
 
-.titulo-beneficios{
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-}
-
-.imagem-beneficios{
-    width: 60%;
-    border-radius: 5px;
-}
-
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #8BB8CC);  /*Uso o linear-gradient e coloco em parânteses as cores que eu quero que ele tenha.*/  
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
 
 }
 
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+}
+
+.titulo-beneficios{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #8BB8C8;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5; /*Usamos para alterar a altura da linha para que o texto não fique muito colado um com o outro na lista que colocamos.*/
+
+}
+
+.itens:first-child{ /*"first-child" é um pseudo-elemento do CSS3 que me permite a seleção de um elemento específico(no caso eu queria que apenas o primeiro item da lista ficasse destacado.*/
+    font-weight: bold; /*O destaque que eu dei foi o negrito para o primeiro item.*/
+}
+
+.imagem-beneficios{
+    width: 60%;
+    border-radius: 5px;
 }
 
 .video{
