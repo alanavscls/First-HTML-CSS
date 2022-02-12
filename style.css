@@ -133,10 +133,10 @@ footer{
 }
 
 /*ALTERANDO A PÁGINA CONTATO.HTML*/
-/*main{
+#formulario{ /*Deixando só a main do formulário organizada, estava interferindo na main da "HOME" e tive que ajeitar.*/
   width: 940px;  
   margin: 0 auto;
-}*/
+}
 
 .main-contato{
     width: 940px;
@@ -200,7 +200,7 @@ td, th{
 /*ALTERANDO A PÁGINA INICIAL/HOME*/
 .banner{
    width: 70%;
-   margin-left: 300px;
+   margin-left: 200px;
 }
 
 .titulo-sobre{
@@ -236,11 +236,11 @@ td, th{
 }
 
 #texto-sobre{
-    margin-left: 190px;
+    margin-left: 210px;
 }
 
 .foto-sobre{
-    width: 170px;
+    width: 190px;
     float: left; /*float serve para deslocar o elemento e deixar os outros elementos ao redor. No caso, estou deslocando a imagem e deixando o texto ao redor dela.*/
     margin: 0 20px 20px 0;
 }
