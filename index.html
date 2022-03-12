@@ -9,8 +9,8 @@
         <meta name="robots" content="ALL" />
         <meta name="Author" content="Alana Vasconcelos" />
         <meta name="language" content="pt-br" /> 
-        <link href="reset.css" rel="stylesheet"/>       
-        <link href="style.css" type="text/css" rel="stylesheet" /><!--Essa forma que colocamos é para o CSS externo, sendo assim, não tem necessidade de permanecer com a tag "style" dentro do head. Podemos tirá-la (vou deixar comentada só para nível de aprendizado mesmo). Também é a forma mais comum de apresentar o CSS.-->
+        <link href="assets/css/reset.css" rel="stylesheet"/>       
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet" /><!--Essa forma que colocamos é para o CSS externo, sendo assim, não tem necessidade de permanecer com a tag "style" dentro do head. Podemos tirá-la (vou deixar comentada só para nível de aprendizado mesmo). Também é a forma mais comum de apresentar o CSS.-->
         <!--<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
     <body>
         <header> <!--Essa tag é de conteúdo do HTML e não de estrutura (não confundir header com head)-->
             <div class="caixa"> 
-                <h1><img src="logoprodutos.png" id="logopagina" alt="Logo do Mundo Pet" /></h1>
+                <h1><img src="assets/img/logoprodutos.png" id="logopagina" alt="Logo do Mundo Pet" /></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -34,13 +34,13 @@
             </div> <!--Usamos div quando a divisão for só "visual".--> 
         </header>
 
-        <img class="banner" src="pets2.png">
+        <img class="banner" src="assets/img/pets2.png">
 
         <main>
             <section class="principal"> <!--Usa-se section quando um bloco for semântico, onde o conteúdo tenha o mesmo significado, o mesmo sentido.-->
                 <h2 class="titulo-sobre">Sobre o Mundo Pet</h2><!--O CSS desse jeito(com a tag "style") é chamado de inline. Repare que se eu quiser que os outros parágrafos tenham a alteração eu terei que repetir isso em cada um deles (não é viável para quando se tem muito texto, vamos ver a outra forma de usar no "head".)-->
 
-                <img src="brinquedos.png" class="foto-sobre" alt="Imagem de brinquedos para animais.">
+                <img src="assets/img/brinquedos.png" class="foto-sobre" alt="Imagem de brinquedos para animais.">
 
                 <p>Localizado no coração da cidade o <strong>Mundo Pet</strong> traz para o mercado o que há de melhor para o seu animal de estimação. Fundado em 2015, o Mundo Pet já é destaque na cidade e conquista novos clientes a cada dia.</p>
                 <p id="missao">Nossa missão é: <em><strong>"Proporcionar aos nossos clientes o melhor em serviços e produtos transmitindo qualidade e confiança através do amor que temos pelos animais".</strong></em></p>
@@ -65,7 +65,7 @@
                         <li class="itens">Artigos para seu pet</li>
                         <li class="itens">Profissionais qualificados</li>
                         <li class="itens">Localização</li>
-                    </ul><img src="vet.png" class="imagem-beneficios" /> <!--Essa "img" tenho que deixar assim por causa do "inline-block" do CSS, porque eu quero que a imagem fique ao lado da lista.-->
+                    </ul><img src="assets/img/vet.png" class="imagem-beneficios" /> <!--Essa "img" tenho que deixar assim por causa do "inline-block" do CSS, porque eu quero que a imagem fique ao lado da lista.-->
                 </div>
                 <div class="video">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/dfq5f8-eY-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -73,7 +73,7 @@
             </section>
         </main>
         <footer>
-            <img src="logoprodutos2.png" alt="Logo do Mundo Pet"/> <!--Usando o "alt" estamos deixando o código mais acessível.-->
+            <img src="assets/img/logoprodutos2.png" alt="Logo do Mundo Pet"/> <!--Usando o "alt" estamos deixando o código mais acessível.-->
             <p class="copyright">&copy; Copyright Mundo Pet - 2022</p> <!--Esse &copy; chama-se unicode, é uma linguagem que tem vários itens/caracteres diferentes para serem representados (pesquisar em: unicode-table.com)-->
         </footer>      
     </body>
