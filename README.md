@@ -12,6 +12,12 @@ Esse projeto consiste no meu primeiro aprendizado sobre HTML e CSS.
   <img width="600" height="303" src="/assets/img/mundopet.gif" />
 </p>
 
+## ⚠ Aviso
+ 
+ - Os códigos de HTML e CSS estão com muitos comentários porque trata-se de um projeto de estudo, eu gosto de ir escrevendo e explicando algumas coisas para fixar melhor o conteúdo;
+ - Sei que para outros fins não devemos colocar comentários tão extensos no código.
+
+
 ##
 
 ### Feito com ❤️ por Alana Vasconcelos 👋 [Entre em contato!](https://www.linkedin.com/in/alanavasconcelos)
